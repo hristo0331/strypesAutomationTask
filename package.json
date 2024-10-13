@@ -1,0 +1,34 @@
+{
+  "name": "task",
+  "version": "1.0.0",
+  "description": "1. Open the main folder \"taskToDo\" in VSCode\r 2. Open the terminal and execute: npm install\r 3. In terminal execute:\r     npm test",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "mocha tests/*.js --timeout 10000 --reporter mochawesome"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^5.1.1",
+    "chromedriver": "^129.0.4",
+    "mocha": "^10.7.3",
+    "selenium-webdriver": "^4.25.0"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "devDependencies": {
+    "mochawesome": "^7.1.3"
+  },
+  "mocha": {
+    "reporterOptions": {
+      "reportDir": "mochawesome-report",
+      "reportFilename": "report",
+      "overwrite": false,
+      "html": true,
+      "json": false
+    }
+  }
+}
