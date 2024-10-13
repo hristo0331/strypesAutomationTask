@@ -20,14 +20,14 @@ describe('Navigation Tests', function () {
     });
 
     it('should navigate to the Customers page', async function () {
-        await navigationPage.goToCustomersPage(); // Извикваме метода за навигация
-        const currentUrl = await navigationPage.getCurrentUrl(); // Вземаме текущия URL
+        await navigationPage.goToCustomersPage();
+        const currentUrl = await navigationPage.getCurrentUrl(); 
         expect(currentUrl).to.equal('https://ict-strypes.eu/customers/'); 
     });
 
     it('should navigate to the Nearsurance page', async function () {
-        await navigationPage.goToNearsurancePage(); // Извикваме метода за навигация
-        const currentUrl = await navigationPage.getCurrentUrl(); // Вземаме текущия URL
+        await navigationPage.goToNearsurancePage();
+        const currentUrl = await navigationPage.getCurrentUrl();
         expect(currentUrl).to.equal('https://ict-strypes.eu/nearsurance/'); 
     });
 });
